@@ -1,0 +1,7 @@
+VERSION:3 SOURCE_TIMESTAMP:4506091C
+NODE:I LEVEL:0 LINE:24 "C:\CodeVisionAVR\inc\mega32.h"
+NODE:I LEVEL:0 LINE:27 "C:\CodeVisionAVR\inc\glcd.h"
+NODE:I LEVEL:0 LINE:31 "C:\CodeVisionAVR\inc\font5x7.h"
+NODE:F LEVEL:0 LINE:35 "read_ext_memory(GLCDMEMADDR_t addr)"
+NODE:F LEVEL:0 LINE:45 "write_ext_memory(GLCDMEMADDR_t addr,unsigned char data)"
+NODE:F LEVEL:0 LINE:53 "main(void)"

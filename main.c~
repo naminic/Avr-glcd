@@ -1,0 +1,96 @@
+/*****************************************************
+This program was produced by the
+CodeWizardAVR V2.05.3 Standard
+Automatic Program Generator
+© Copyright 1998-2011 Pavel Haiduc, HP InfoTech s.r.l.
+http://www.hpinfotech.com
+
+Project : 
+Version : 
+Date    : 8/6/2014
+Author  : WWW.PARANDCO.COM
+Company : PARAND
+Comments: 
+
+
+Chip type               : ATmega32
+Program type            : Application
+AVR Core Clock frequency: 8.000000 MHz
+Memory model            : Small
+External RAM size       : 0
+Data Stack size         : 512
+*****************************************************/
+
+#include <mega32.h>
+
+// Graphic LCD functions
+#include <glcd.h>
+
+// Font used for displaying text
+// on the graphic LCD
+#include <font5x7.h>
+
+// Function used for reading image
+// data from external memory
+unsigned char read_ext_memory(GLCDMEMADDR_t addr)
+{
+unsigned char data;
+// Place your code here
+
+return data;
+}
+
+// Function used for writing image
+// data to external memory
+void write_ext_memory(GLCDMEMADDR_t addr, unsigned char data)
+{
+// Place your code here
+
+}
+
+// Declare your global variables here
+
+void main(void)
+{
+// Declare your local variables here
+// Graphic LCD initialization data
+GLCDINIT_t glcd_init_data;
+
+// Graphic LCD initialization
+// The KS0108 connections are specified in the
+// Project|Configure|C Compiler|Libraries|Graphic LCD menu:
+// DB0 - PORTC Bit 0
+// DB1 - PORTC Bit 1
+// DB2 - PORTC Bit 2
+// DB3 - PORTC Bit 3
+// DB4 - PORTC Bit 4
+// DB5 - PORTC Bit 5
+// DB6 - PORTC Bit 6
+// DB7 - PORTC Bit 7
+// E - PORTD Bit 2
+// RD /WR - PORTD Bit 1
+// RS - PORTD Bit 0
+// /RST - PORTD Bit 5
+// CS1 - PORTD Bit 3
+// CS2 - PORTD Bit 4
+
+// Specify the current font for displaying text
+glcd_init_data.font=font5x7;
+// No function is used for reading
+// image data from external memory
+glcd_init_data.readxmem=NULL;
+// No function is used for writing
+// image data to external memory
+glcd_init_data.writexmem=NULL;
+
+glcd_init(&glcd_init_data);
+
+glcd_outtextxyf(30,30,"WWW.NAMINIC.COM");
+glcd_outtextxyf(1,1,"WWW.NAMINIC.COM");
+
+while (1)
+      {
+      // Place your code here
+
+      }
+}
